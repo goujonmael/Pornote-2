@@ -91,7 +91,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="D:\BUREAU\photodeprofil.jpg" />
+                                                <entry key="imagePath" value="D:\BUREAU\Screenshot_20201025-091136_PRONOTE.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -125,7 +125,8 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="000000" />
-                                      <entry key="outputName" value="photoprofil" />
+                                      <entry key="legacyIconShape" value="NONE" />
+                                      <entry key="outputName" value="action_menu2" />
                                     </map>
                                   </option>
                                 </PersistentState>

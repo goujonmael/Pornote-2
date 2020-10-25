@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidDrawerSheet.iml" filepath="$PROJECT_DIR$/AndroidDrawerSheet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidDrawerSheet-master.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidDrawerSheet-master.iml" group="AndroidDrawerSheet-master" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androiddrawersheet/AndroidDrawerSheet-master-androiddrawersheet.iml" filepath="$PROJECT_DIR$/.idea/modules/androiddrawersheet/AndroidDrawerSheet-master-androiddrawersheet.iml" group="AndroidDrawerSheet-master/androiddrawersheet" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidDrawerSheet-master-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidDrawerSheet-master-app.iml" group="AndroidDrawerSheet-master/app" />
-      <module fileurl="file://$PROJECT_DIR$/androiddrawersheet/androiddrawersheet.iml" filepath="$PROJECT_DIR$/androiddrawersheet/androiddrawersheet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidDrawerSheet-master.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidDrawerSheet-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androiddrawersheet/AndroidDrawerSheet-master.androiddrawersheet.iml" filepath="$PROJECT_DIR$/.idea/modules/androiddrawersheet/AndroidDrawerSheet-master.androiddrawersheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidDrawerSheet-master.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidDrawerSheet-master.app.iml" />
     </modules>
   </component>
 </project>

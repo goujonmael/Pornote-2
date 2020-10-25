@@ -18,14 +18,11 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_drawer_sheet);
 
-
-
         ImageButton rightButton = (ImageButton)findViewById(R.id.right_image_button);
 
         final AndroidDrawerSheet rightDrawerSheet = (AndroidDrawerSheet)findViewById(R.id.right_drawer);
 
         Button rightDrawerCloseButton = (Button)findViewById(R.id.right_drawer_close_button);
-
 
 
         rightButton.setOnClickListener(new View.OnClickListener() {
@@ -35,14 +32,12 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
             }
         });
 
-
         rightDrawerCloseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rightDrawerSheet.closeDrawer();
             }
         });
-
 
 
 
@@ -67,8 +62,6 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
                 Log.i(LOG_TAG, "After right drawer is opened");
             }
         });
-
-
 
 
 
