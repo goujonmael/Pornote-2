@@ -1,5 +1,6 @@
 package de.mxapplications.androiddrawersheetexample;
 
+import android.annotation.SuppressLint;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,8 +19,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.widget.Toast;
 
 public class AndroidDrawerSheetActivity extends AppCompatActivity {
+
+    Button changeTextButton;
+    TextView message;
+
+
 
 
     private final static String LOG_TAG="Example Activity";
@@ -28,6 +39,26 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_drawer_sheet);
+
+
+//FARADAY
+        message= (TextView)findViewById(R.id.ChangeClasse);
+        changeTextButton = (Button)findViewById(R.id.bChangeText);
+        changeTextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                message.setText("(TFARADAY)");
+            }
+        });
+//CUIVRE
+        message= (TextView)findViewById(R.id.ChangeClasse);
+        changeTextButton = (Button)findViewById(R.id.bChangeText2);
+        changeTextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                message.setText("(TCUIVRE)");
+            }
+        });
 
 
         TextView textView=findViewById(R.id.date);
@@ -92,4 +123,9 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
         });
 
     }
+
+
+
+
 }
+
