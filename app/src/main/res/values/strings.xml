@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">AndroidDrawerSheet</string>
+    <string name="app_name">Pornote</string>
     <string name="bottom_text1">Drag to open.</string>
     <string name="bottom_text2">The drawer closes completely when the user resizes it to less than half its full size and it opens completely when the user resizes it to more than half its full size</string>
     <string name="accueil">  Page d\'accueil</string>
-    <string name="connexion_date">Précédente connexion le DATE!</string>
+    <string name="connexion_date">Précédente connexion le </string>
     <string name="name">  GOUJON Maël</string>
     <string name="top_text1">Touch and drag down from right below the action bar to open.</string>
     <string name="top_text2">The drawer has a screenOffset of 48dp and the screenOffset is invisible. It closes completely when the user resizes it to less then 100dp and it opens completely when the user resizes it to its full size -150dp.</string>

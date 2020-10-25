@@ -7,10 +7,21 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import de.mxapplications.androiddrawersheet.AndroidDrawerSheet;
 
+import android.annotation.TargetApi;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.TextView;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class AndroidDrawerSheetActivity extends AppCompatActivity {
+
+
     private final static String LOG_TAG="Example Activity";
 
     @Override
@@ -18,11 +29,18 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_drawer_sheet);
 
+
+        TextView textView=findViewById(R.id.date);
+        SimpleDateFormat sdf = new SimpleDateFormat("EEE dd.MMM 'à' HH'h'mm");
+        String currentDateandTime = sdf.format(new Date());
+        textView.setText(currentDateandTime);
+
+
         ImageButton rightButton = (ImageButton)findViewById(R.id.right_image_button);
 
         final AndroidDrawerSheet rightDrawerSheet = (AndroidDrawerSheet)findViewById(R.id.right_drawer);
 
-        Button rightDrawerCloseButton = (Button)findViewById(R.id.right_drawer_close_button);
+        ImageButton rightDrawerCloseButton = (ImageButton)findViewById(R.id.right_drawer_close_button);
 
 
         rightButton.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +60,7 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
 
 
         rightDrawerSheet.addOnInteractionListener(new AndroidDrawerSheet.OnInteractionListener() {
+
             @Override
             public void beforeDrawerClosed() {
                 Log.i(LOG_TAG, "Before right drawer is closed");
