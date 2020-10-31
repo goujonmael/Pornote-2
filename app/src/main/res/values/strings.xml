@@ -10,4 +10,6 @@
     <string name="left_text1">You can\'t open it by dragging or swiping. But you can close it by swiping or dragging.</string>
     <string name="left_text2">The drawer uses all the default settings.</string>
     <string name="right_button_text">Close</string>
+    <string name="sub">Changer 😏</string>
+    <string name="pourle">"Pour le "</string>
 </resources>

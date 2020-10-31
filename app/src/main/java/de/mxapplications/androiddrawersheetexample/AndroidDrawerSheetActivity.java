@@ -2,10 +2,13 @@ package de.mxapplications.androiddrawersheetexample;
 
 import android.annotation.SuppressLint;
 import android.media.Image;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -25,10 +28,22 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+
 public class AndroidDrawerSheetActivity extends AppCompatActivity {
 
     Button changeTextButton;
     TextView message;
+    Button mButton;
+    TextInputLayout mEdit;
+    TextView mText;
+
 
 
 
@@ -60,11 +75,35 @@ public class AndroidDrawerSheetActivity extends AppCompatActivity {
             }
         });
 
+//SET BUTTON
+        mButton = (Button)findViewById(R.id.button1);
+
+        mButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                mText = (TextView)findViewById(R.id.textView1);
+                TextInputLayout textInputLayout = findViewById(R.id.editText1);
+                Editable text = textInputLayout.getEditText().getText();
+                message.setText("("+text+")");
+
+            }
+        });
+
+
+
 
         TextView textView=findViewById(R.id.date);
         SimpleDateFormat sdf = new SimpleDateFormat("EEE dd.MMM 'à' HH'h'mm");
         String currentDateandTime = sdf.format(new Date());
         textView.setText(currentDateandTime);
+
+//Dates des prochains devoirs
+
+        TextView datefor=findViewById(R.id.datefor);
+        SimpleDateFormat prochains = new SimpleDateFormat("EEEE dd MMM.");
+        String next = prochains.format(new Date());
+        next=next.toLowerCase();
+        datefor.setText(next);
+
 
 
         ImageButton rightButton = (ImageButton)findViewById(R.id.right_image_button);
